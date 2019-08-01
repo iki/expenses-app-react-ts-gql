@@ -112,3 +112,36 @@ Install [Prettier](https://github.com/prettier/prettier#editor-integration) and
 - [ ] Run tests and deployment in CI/CD pipeline
 - [ ] Log errors to issue tracker
 - [ ] Extend logged errors with session replay data
+
+## Settings
+
+We use
+[the same dotenv files](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables#adding-development-environment-variables-in-env)
+as [Create React App](https://github.com/facebookincubator/create-react-app).
+
+To define permanent environment variables, create a file called `.env` in the root of your project:
+
+> REACT_APP_NOT_SECRET_CODE=abcdef
+
+The `.env` files should be checked into source control, with the exclusion of `.env*.local`.
+
+### Used environment files
+
+- `.env`: Default.
+- `.env.local`: Local overrides. This file is loaded for all environments except test.
+- `.env.development`, `.env.test`, `.env.production`: Environment-specific
+  settings.
+- `.env.development.local`, `.env.test.local`, `.env.production.local`: Local overrides of
+  environment-specific settings.
+
+The environment is determined by `NODE_ENV` variable. The basic Yarn commands use different environments by default.
+Files on the left have more priority than files on the right:
+
+- `yarn start`: Defaults to `development` environment and loading `.env.development.local`, `.env.development`,
+  `.env.local`, `.env`.
+- `yarn build`: Defaults to `production` environment and loading `.env.production.local`, `.env.production`,
+  `.env.local`, `.env`.
+- `yarn test`: Defaults to `test` environment and loading `.env.test.local`, `.env.test`.
+
+These variables will act as the defaults if the machine does not explicitly set them. Please refer to the
+[dotenv documentation](https://github.com/motdotla/dotenv) for more details.
