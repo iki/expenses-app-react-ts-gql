@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/expenses-app-react-ts-gql/static/css/main.19393e92.chunk.css",
+    "main.js": "/expenses-app-react-ts-gql/static/js/main.7d10eed7.chunk.js",
+    "main.js.map": "/expenses-app-react-ts-gql/static/js/main.7d10eed7.chunk.js.map",
+    "runtime~main.js": "/expenses-app-react-ts-gql/static/js/runtime~main.7a7a5689.js",
+    "runtime~main.js.map": "/expenses-app-react-ts-gql/static/js/runtime~main.7a7a5689.js.map",
+    "static/js/2.b41502e9.chunk.js": "/expenses-app-react-ts-gql/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/expenses-app-react-ts-gql/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/expenses-app-react-ts-gql/index.html",
+    "precache-manifest.5fd1647da83a0317e46fa273ef7e7ed8.js": "/expenses-app-react-ts-gql/precache-manifest.5fd1647da83a0317e46fa273ef7e7ed8.js",
+    "service-worker.js": "/expenses-app-react-ts-gql/service-worker.js",
+    "static/css/main.19393e92.chunk.css.map": "/expenses-app-react-ts-gql/static/css/main.19393e92.chunk.css.map",
+    "static/media/logo.svg": "/expenses-app-react-ts-gql/static/media/logo.5d5d9eef.svg"
+  }
+}
