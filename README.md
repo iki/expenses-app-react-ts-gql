@@ -33,6 +33,23 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 
+### `yarn release --no-ci`
+
+[Creates](https://github.com/semantic-release/semantic-release) a new app [release](https://github.com/iki/expenses-app-react-ts-gql/releases):
+
+- [Analyzes commits](https://github.com/semantic-release/commit-analyzer) since the last version tag and [determines](https://github.com/semantic-release/semantic-release#commit-message-format) the next [semantic version](https://semver.org/)
+- [Generates](https://github.com/semantic-release/changelog) a [changelog](https://github.com/iki/expenses-app-react-ts-gql/blob/master/CHANGELOG.md)
+- [Pushes](https://github.com/semantic-release/git) the release commit and [new release](https://github.com/iki/expenses-app-react-ts-gql/releases) version tag to [`master`](https://github.com/iki/expenses-app-react-ts-gql/tree/master)
+- [Comments](https://github.com/semantic-release/github) on released [Pull Requests](https://github.com/iki/expenses-app-react-ts-gql/pulls) and [Issues](https://github.com/iki/expenses-app-react-ts-gql/issues)
+
+[Deployment](#yarn-deploy) to [GitHub Pages](https://pages.github.com/) using [`gh-pages`](https://github.com/iki/expenses-app-react-ts-gql/tree/gh-pages) branch is handled [separately](#yarn-deploy) for flexibility and due to [gh-pages-plugin](https://github.com/qiwi/semantic-release-gh-pages-plugin)/[git-plugin](https://github.com/semantic-release/git) [issue](https://github.com/qiwi/semantic-release-gh-pages-plugin/issues/48).
+
+[**Requires**](https://github.com/qiwi/semantic-release-gh-pages-plugin#configuration) setting [`GH_TOKEN`](https://github.com/settings/tokens) or [`GITHUB_TOKEN`](https://github.com/settings/tokens) with [`public_repo` scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/#available-scopes) in your environment, or in a [local `.env` file](#used-environment-files).
+
+### `yarn deploy`
+
+> TODO
+
 ## Code Style
 
 Install [Prettier](https://github.com/prettier/prettier#editor-integration) and
@@ -107,7 +124,7 @@ Install [Prettier](https://github.com/prettier/prettier#editor-integration) and
 
 ### DevOps
 
-- [ ] Add release process
+- [x] Add release process
 - [ ] Add deployment process
 - [ ] Run tests and deployment in CI/CD pipeline
 - [ ] Log errors to issue tracker

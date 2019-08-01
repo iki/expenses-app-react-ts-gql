@@ -30,6 +30,12 @@
     "react-scripts": "3.0.1",
     "typescript": "3.5.3"
   },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
+    "dotenv-cli": "^2.0.1",
+    "semantic-release": "^15.13.19"
+  },
   "resolutions": {
     "lodash": "4.17.15",
     "lodash.template": "4.5.0"
@@ -37,7 +43,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "release": "yarn run-env semantic-release",
+    "run-env": "sh -c \"dotenv -e .env -e .env.local -e .env.${NODE_ENV:=development} -e .env.${NODE_ENV:=development}.local -- $@\" --"
   },
   "eslintConfig": {
     "extends": "react-app"
