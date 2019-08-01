@@ -48,7 +48,7 @@ The build is minified and the filenames include the hashes.<br>
 
 ### `yarn deploy`
 
-> TODO
+[Deploys](https://github.com/tschaub/gh-pages) build to [GitHub Pages](https://pages.github.com/) using [`gh-pages`](https://github.com/iki/expenses-app-react-ts-gql/tree/gh-pages) branch.
 
 ## Code Style
 
@@ -125,7 +125,7 @@ Install [Prettier](https://github.com/prettier/prettier#editor-integration) and
 ### DevOps
 
 - [x] Add release process
-- [ ] Add deployment process
+- [x] Add deployment process
 - [ ] Run tests and deployment in CI/CD pipeline
 - [ ] Log errors to issue tracker
 - [ ] Extend logged errors with session replay data
