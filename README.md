@@ -37,3 +37,78 @@ The build is minified and the filenames include the hashes.<br>
 
 Install [Prettier](https://github.com/prettier/prettier#editor-integration) and
 [TSLint](https://palantir.github.io/tslint/usage/third-party-tools/) support for your editor/IDE.
+
+## Roadmap
+
+### Codebase
+
+- [x] Define code style
+- [ ] Add component storybook
+
+### Data
+
+- [ ] Create GraphQL schema
+- [ ] Add sample data loaders
+
+### Docs
+
+- [x] Design decisions
+- [x] Roadmap
+- [ ] Contributing
+
+### Core
+
+- [x] Create React app with TypeScript support
+- [ ] Setup Apollo GraphQL
+- [ ] Setup Material UI
+- [ ] Setup routing
+- [ ] Setup authentication
+
+### Features
+
+#### Users
+
+- [ ] Login and logout
+
+#### Expenses
+
+- [ ] View expenses
+- [ ] Edit expenses
+- [ ] Add expenses
+- [ ] Edit categories
+- [ ] Add categories
+- [ ] Filter expenses
+- [ ] View expenses timeline chart
+- [ ] View expenses chart by category
+- [ ] View expenses using infinite loader
+
+#### Shared expenses
+
+- [ ] Share expenses with other users
+- [ ] View mutual debt chart by user
+- [ ] Balance mutual debt
+
+### Performance
+
+- [ ] Test load speed
+- [ ] Analyze bundle size
+- [ ] Load offline using service worker
+- [ ] Work offline using GraphQL cache
+
+### Testing
+
+- [ ] Test components
+- [ ] Test code style
+- [ ] Test code quality
+- [ ] Test code for security vulnerabilities
+- [x] Test dependencies for security vulnerabilities
+- [ ] Test responsive design
+- [ ] Test GraphQL queries and mutations with backend
+
+### DevOps
+
+- [ ] Add release process
+- [ ] Add deployment process
+- [ ] Run tests and deployment in CI/CD pipeline
+- [ ] Log errors to issue tracker
+- [ ] Extend logged errors with session replay data
