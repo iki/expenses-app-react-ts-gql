@@ -2,6 +2,24 @@
   "name": "expenses-app-react-ts-gql",
   "version": "0.1.0",
   "private": true,
+  "description": "Sample expenses app using React, TypeScript and GraphQL",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "typescript",
+    "graphql",
+    "apollo",
+    "example",
+    "sample"
+  ],
+  "homepage": "https://iki.github.io/expenses-app-react-ts-gql/",
+  "bugs": {
+    "url": "https://github.com/iki/expenses-app-react-ts-gql/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iki/expenses-app-react-ts-gql"
+  },
   "dependencies": {
     "@types/jest": "24.0.15",
     "@types/node": "12.6.8",
