@@ -1,0 +1,15 @@
+#import './category.gql'
+#import './transaction.gql'
+
+fragment user on User {
+  id
+  name
+  email
+  isEnabled
+  categories {
+    ...category
+  }
+  transactions {
+    ...transaction
+  }
+}

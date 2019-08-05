@@ -1,0 +1,9 @@
+fragment transaction on Transaction {
+  id
+  date
+  note
+  value
+  category {
+    ...category
+  }
+}

@@ -1,0 +1,7 @@
+#import '../fragments/transactions.gql'
+
+query getTransactions($filter: TransactionFilter) {
+  allTransactions(filter: $filter, orderBy: date_ASC) {
+    ...transaction
+  }
+}

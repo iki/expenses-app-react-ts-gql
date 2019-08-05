@@ -1,0 +1,51 @@
+# Graphcool schema
+
+# Keep in sync with the development instance!
+
+# Production: https://console.graph.cool/expenses/schema
+# Development: https://console.graph.cool/expenses-dev/schema
+# Test: https://console.graph.cool/expenses-test/schema
+
+# version: 7
+
+
+type Transaction @model {
+  id: ID! @isUnique
+  date: DateTime!
+  note: String
+  value: Float!
+  category: Category! @relation(name: "CategoryTransactions")
+  attachments: [File!]! @relation(name: "TransactionAttachments")
+  user: User! @relation(name: "UserTransactions")
+}
+
+type Category @model {
+  id: ID! @isUnique
+  name: String!
+  color: String!
+  user: User! @relation(name: "UserCategories")
+  transactions: [Transaction!]! @relation(name: "CategoryTransactions")
+}
+
+type File @model {
+  id: ID! @isUnique
+  url: String! @isUnique
+  name: String!
+  size: Int!
+  secret: String! @isUnique
+  contentType: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  transaction: Transaction @relation(name: "TransactionAttachments")
+}
+
+type User @model {
+  id: ID! @isUnique
+  name: String!
+  email: String! @isUnique
+  isEnabled: Boolean!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  categories: [Category!]! @relation(name: "UserCategories")
+  transactions: [Transaction!]! @relation(name: "UserTransactions")
+}

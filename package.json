@@ -21,13 +21,31 @@
     "url": "git+https://github.com/iki/expenses-app-react-ts-gql"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^0.1.0-beta.11",
+    "@material-ui/core": "^4.3.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/types": "^4.1.1",
     "@types/jest": "24.0.15",
     "@types/node": "12.6.8",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.5",
+    "@types/react-router": "^5.0.3",
+    "@types/react-router-dom": "^4.3.4",
+    "apollo-cache-inmemory": "^1.6.2",
+    "apollo-client": "^2.6.3",
+    "apollo-link": "^1.2.12",
+    "apollo-link-context": "^1.0.18",
+    "apollo-link-error": "^1.1.11",
+    "apollo-link-http": "^1.5.15",
+    "apollo-link-state": "^0.4.2",
+    "apollo-link-ws": "^1.0.18",
+    "graphql.macro": "^1.4.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "subscriptions-transport-ws": "^0.9.16",
+    "typeface-roboto": "^0.0.75",
     "typescript": "3.5.3"
   },
   "devDependencies": {
@@ -35,6 +53,10 @@
     "@semantic-release/git": "^7.0.16",
     "dotenv-cli": "^2.0.1",
     "gh-pages": "^2.1.0",
+    "graphql-cli": "^3.0.12",
+    "graphql-tag": "^2.10.1",
+    "local-web-server": "^3.0.7",
+    "prettier": "^1.18.2",
     "semantic-release": "^15.13.19"
   },
   "resolutions": {
@@ -45,8 +67,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "serve": "ws -p 5000 -d build -s index.html --spa.asset-test-fs --rewrite \"/expenses-app-react-ts-gql/(.*) -> /$1\" -f dev -o",
+    "serve-ci": "ws -p 5000 -d build -s index.html --spa.asset-test-fs --rewrite \"/expenses-app-react-ts-gql/(.*) -> /$1\" -f short",
     "release": "yarn run-env semantic-release",
     "deploy": "gh-pages --git git -d build -m \"deploy(gh-pages)\"",
+    "prettify": "prettier \"{src,test}/**/*.{ts,tsx,gql,css,md}\" \"./*.{js,ts,md,json}\" --write",
+    "get-schema": "graphql get-schema -e development",
     "run-env": "sh -c \"dotenv -e .env -e .env.local -e .env.${NODE_ENV:=development} -e .env.${NODE_ENV:=development}.local -- $@\" --"
   },
   "eslintConfig": {

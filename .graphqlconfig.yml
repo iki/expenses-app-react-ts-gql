@@ -1,0 +1,28 @@
+# Format: https://github.com/prisma/graphql-config
+# Spec:   https://github.com/prisma/graphql-config/blob/master/specification.md
+
+# Define project for tools that need it
+projects:
+  expenses: {}
+
+# Define all settings as shared for simplicity
+schemaPath: schema.graphql
+
+extensions:
+  endpoints:
+    production:
+      url: https://api.graph.cool/simple/v1/expenses
+      subscription:
+        url: wss://subscriptions.graph.cool/v1/expenses
+    development:
+      url: https://api.graph.cool/simple/v1/expenses-dev
+      subscription:
+        url: wss://subscriptions.graph.cool/v1/expenses-dev
+    test:
+      url: https://api.graph.cool/simple/v1/expenses-test
+      subscription:
+        url: wss://subscriptions.graph.cool/v1/expenses-test
+
+  generate-fragments:
+    output: src/graphql/fragments
+    generator: graphql

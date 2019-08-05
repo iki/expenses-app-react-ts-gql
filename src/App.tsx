@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { MuiThemeProvider } from '@material-ui/core/styles'
+import { Redirect, Route, Switch } from 'react-router-dom'
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import theme from './config/theme'
+import { baseUrl, basePath, apiUrl, fileUrl, wsUrl } from './config/api'
+import { expensesRoute } from './config/routes'
+import AppHeader from './components/AppLayout'
+import ExpensesView from './components/ExpensesView'
 
-export default App;
+const App = () => (
+  <MuiThemeProvider theme={theme}>
+    <AppHeader />
+    <main
+      data-base-url={baseUrl}
+      data-base-path={basePath}
+      data-api-url={apiUrl}
+      data-file-url={fileUrl}
+      data-ws-url={wsUrl}
+    >
+      <Switch>
+        <Route path={expensesRoute()} component={ExpensesView} exact={true} />
+
+        <Redirect to={expensesRoute()} />
+      </Switch>
+    </main>
+  </MuiThemeProvider>
+)
+
+export default App
