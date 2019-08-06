@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/expenses-app-react-ts-gql/static/js/main.7c03a863.chunk.js",
-    "main.js.map": "/expenses-app-react-ts-gql/static/js/main.7c03a863.chunk.js.map",
+    "main.js": "/expenses-app-react-ts-gql/static/js/main.b91a8de4.chunk.js",
+    "main.js.map": "/expenses-app-react-ts-gql/static/js/main.b91a8de4.chunk.js.map",
     "runtime~main.js": "/expenses-app-react-ts-gql/static/js/runtime~main.7a7a5689.js",
     "runtime~main.js.map": "/expenses-app-react-ts-gql/static/js/runtime~main.7a7a5689.js.map",
-    "static/js/2.b357d322.chunk.js": "/expenses-app-react-ts-gql/static/js/2.b357d322.chunk.js",
-    "static/js/2.b357d322.chunk.js.map": "/expenses-app-react-ts-gql/static/js/2.b357d322.chunk.js.map",
+    "static/js/2.86e29862.chunk.js": "/expenses-app-react-ts-gql/static/js/2.86e29862.chunk.js",
+    "static/js/2.86e29862.chunk.js.map": "/expenses-app-react-ts-gql/static/js/2.86e29862.chunk.js.map",
     "index.html": "/expenses-app-react-ts-gql/index.html",
-    "precache-manifest.8cd8db2397590c08a34005205c69fba5.js": "/expenses-app-react-ts-gql/precache-manifest.8cd8db2397590c08a34005205c69fba5.js",
+    "precache-manifest.199b0b00a25fe34cd581603dd22f7695.js": "/expenses-app-react-ts-gql/precache-manifest.199b0b00a25fe34cd581603dd22f7695.js",
     "service-worker.js": "/expenses-app-react-ts-gql/service-worker.js",
-    "static/media/appbar.jpg": "/expenses-app-react-ts-gql/static/media/appbar.1b3151e5.jpg"
+    "static/media/appbar.jpg": "/expenses-app-react-ts-gql/static/media/appbar.6e082240.jpg"
   }
 }
