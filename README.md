@@ -55,6 +55,20 @@ The build is minified and the filenames include the hashes.<br>
 Install [Prettier](https://github.com/prettier/prettier#editor-integration) and
 [TSLint](https://palantir.github.io/tslint/usage/third-party-tools/) support for your editor/IDE.
 
+Settings: [`.prettierrc.yml`](.prettierrc.yml)
+
+https://github.com/iki/expenses-app-react-ts-gql/blob/master/.prettierrc.yml
+
+https://github.com/iki/expenses-app-react-ts-gql/blob/master/.prettierrc.yml#L1-L40
+
+https://github.com/iki/expenses-app-react-ts-gql/blob/master/.prettierrc.yml#L1-L999
+
+https://github.com/iki/expenses-app-react-ts-gql/blob/bd86467fa96fdb4e3e38a7d71b511f9abb4e4e99/.prettierrc.yml
+
+https://github.com/iki/expenses-app-react-ts-gql/blob/bd86467fa96fdb4e3e38a7d71b511f9abb4e4e99/.prettierrc.yml#L1-L40
+
+https://github.com/iki/expenses-app-react-ts-gql/blob/bd86467fa96fdb4e3e38a7d71b511f9abb4e4e99/.prettierrc.yml#L1-L999
+
 ## Roadmap
 
 ### Codebase
